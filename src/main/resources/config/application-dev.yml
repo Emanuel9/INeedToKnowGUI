@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ineedgui
+    description: INeedToKnow GUI
+  data:
+    cassandra:
+      keyspace-name: ineedtoknow
+      contact-points: localhost
+      ssl: false
+      port: 9042
+
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+    property-naming-strategy: SNAKE_CASE
+    serialization:
+          WRITE_DATES_AS_TIMESTAMPS: false
